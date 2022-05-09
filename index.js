@@ -24,26 +24,56 @@ console.log(a ," ",", ", b," ,",c)
 
 
 
+
+
+
 // functions
 
 // 1. Write a function that will take 2 numbers as inputs, then return the sum of the 2 numbers.
-function add() {}
+function add(num1,num2) {
+
+    return num1 + num2
+}
+
+console.log(add(2,3))
 
 // 2. Create a similar function as the above, but return the multiple of the 2 numbers.
-function multiply() {}
+function multiply(num1 ,num2) {
 
+    return  num1 * num2
+}
+
+console.log(multiply(2,3))
 // 3. Write a function that accepts a number as input, if the number is odd, return a string 'odd', if this number is even, return a string 'even'.
-function oddOrEven() {}
+function oddOrEven(num) {
+
+    if(num % 2 == 0){
+        console.log("Number Is Even ")
+    }else{
+        console.log("Number is Odd")
+    }
+
+}
+
+console.log(oddOrEven(10))
 
 // 5. Fix this function. We want to see 2 in the console instead of undefined
 function hoisting() {
-  console.log(y) // undefined
+   // undefined
   let y = 2
+  console.log(y)
 }
+hoisting()
 
 // 6. Write a count function that runs from 1 to 100 using for loop
 // if the current count is odd, print "odd", else print "even"
-function count() {}
+function count() {
+
+    for(i = 0; i >=100; i++){
+        console.log(i)
+    }
+}
+count()
 
 // 7. Write a function that accepts a string as an input, and return a new string with the first character uppercased
 // Ex: capitalized("abc") will return "Abc"
