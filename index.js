@@ -69,8 +69,9 @@ hoisting()
 // if the current count is odd, print "odd", else print "even"
 function count() {
 
-    for(i = 0; i >=100; i++){
-        console.log(i)
+    
+    for (let i = 1; i <= 100; i++) {
+        console.log(i);
     }
 }
 count()
@@ -91,7 +92,7 @@ capitalized("sumrooz")
 function reverse(n) {
 
     
-    return n.split("")
+    return n
 }
 
 reverse(1234)
@@ -101,10 +102,39 @@ function isPalindrome() {}
 
 // 10. Write a JavaScript function that accepts two numbers and print the larger
 // Ex: printLarger(1,2) will console log 2 in the console
-function printLarger() {}
+function printLarger(num1,num2) {
+
+
+    if(num1 > num2){
+        console.log(num1)
+    }else{
+        console.log("Number is not lower")
+    }
+}
+
+printLarger(9,10)
 
 // 11. Write a JavaScript function to extract a specified number of characters from a string
 // Ex: extract("abcd", 2) will return "ab"
 // Ex: extract("abcd", 3) will return "abc"
 
 // 12. Convert two functions into arrow functions
+
+let printLargerNum = (num1,num2) =>{
+    if(num1 > num2){
+        console.log(num1)
+    }
+}
+
+printLargerNum(20,13)
+
+
+let checkNum = (num1) =>{
+    if(num1 <=5){
+        console.log("Number is less than 5")
+    }else{
+        console.log("Number is Greater Than 5")
+    }
+}
+
+checkNum(10)
