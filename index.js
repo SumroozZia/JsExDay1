@@ -77,12 +77,24 @@ count()
 
 // 7. Write a function that accepts a string as an input, and return a new string with the first character uppercased
 // Ex: capitalized("abc") will return "Abc"
-function capitalized() {}
+function capitalized(str) {
+
+    let strNode  = str;
+    let str2 = str.charAt(0).toUpperCase() +str.slice(1)
+
+    console.log(str2)
+}
+capitalized("sumrooz")
 
 // 8. Write a function accepts a number as input and then return the number reversed
 // Ex: reverse(1234) will return 4321
-function reverse() {}
+function reverse(n) {
 
+    
+    return n.split("")
+}
+
+reverse(1234)
 // 9. Write a function accepts a string as input and checks if that string is a palindrome. A palindrome is word, phrase, or sequence that reads the same backward as forward, Ex: madam
 // if the string is a palindrome, return true, else return false
 function isPalindrome() {}
